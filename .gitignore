@@ -5,6 +5,8 @@
 *.csv
 *.txt
 *.pdf
+*.png
+*.jpg
 *.html
 *.db
 *.db3
