@@ -1,5 +1,7 @@
 *.*~
 *.v
+*.ds
+*.ux
 *.swp
 *.log
 *.csv
