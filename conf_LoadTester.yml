@@ -1,5 +1,5 @@
 --- 
-numIterations: 1
 numUsers: 5
 delayBetweenUsers: 0
+numIterations: 1
 other_configuration_items: ""
