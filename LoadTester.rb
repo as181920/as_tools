@@ -4,12 +4,14 @@
 
 require 'thread'
 require 'yaml'
-require 'precheck'
 require 'logger'
+#require 'precheck'
+require File.join(File.dirname(__FILE__),"precheck")
 
 $LOG = Logger.new(STDOUT)
 $LOG.level = Logger::DEBUG
-$CONFIG = YAML.load(File.read(Dir.getwd+"/"+"conf_LoadTester.yml"))
+#$CONFIG = YAML.load(File.read(Dir.getwd+"/"+"conf_LoadTester.yml"))
+$CONFIG = YAML.load(File.read(File.join(File.dirname(__FILE__),"conf_LoadTester.yml")))
 
 class LoadTester
   def self.loadTestRunner
